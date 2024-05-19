@@ -1,7 +1,7 @@
-name: Build_And_Deploy
+name: Build_Pull_Request
 
 on:
-  push:
+  pull_request:
     branches:
       - main
 
@@ -26,4 +26,4 @@ jobs:
         with:
           path: |
             build/libs/*.jar
-            build/resourcePack/*.jar
+            build/resourcePack/*.zip
